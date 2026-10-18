@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f1e8" />
+      <stop offset="50%" stop-color="#f0ebe0" />
+      <stop offset="100%" stop-color="#eae3d4" />
+    </linearGradient>
+    <linearGradient id="lilacWash" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#c5b6d4" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#a896ba" stop-opacity="0.1" />
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Paper ground -->
+  <rect width="800" height="1000" fill="url(#bgGrad1)" />
+
+  <!-- Lilac atmospheric wash -->
+  <path d="M 120,180 Q 280,120 480,220 T 700,450 Q 650,750 420,820 T 150,700 Z" fill="url(#lilacWash)" />
+  <circle cx="280" cy="350" r="140" fill="#ded4e8" fill-opacity="0.3" />
+
+  <!-- Faint grid / drafting lines for botanical study -->
+  <line x1="100" y1="200" x2="700" y2="200" stroke="#5a684b" stroke-opacity="0.15" stroke-dasharray="4,8" />
+  <line x1="100" y1="800" x2="700" y2="800" stroke="#5a684b" stroke-opacity="0.15" stroke-dasharray="4,8" />
+  <line x1="200" y1="120" x2="200" y2="880" stroke="#5a684b" stroke-opacity="0.12" stroke-dasharray="3,7" />
+  <line x1="600" y1="120" x2="600" y2="880" stroke="#5a684b" stroke-opacity="0.12" stroke-dasharray="3,7" />
+
+  <!-- Botanical branch - organic curves in deep blue ink & olive leaves -->
+  <!-- Main stem -->
+  <path d="M 240,840 C 260,700 320,580 370,460 C 410,360 430,260 400,160" 
+        fill="none" stroke="#162233" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Side stem 1 -->
+  <path d="M 330,600 C 390,560 480,550 540,500" 
+        fill="none" stroke="#162233" stroke-width="3" stroke-linecap="round" />
+  <!-- Side stem 2 -->
+  <path d="M 390,420 C 440,380 480,310 520,240" 
+        fill="none" stroke="#162233" stroke-width="2.5" stroke-linecap="round" />
+  <!-- Side stem 3 -->
+  <path d="M 285,690 C 220,650 180,610 160,540" 
+        fill="none" stroke="#162233" stroke-width="2.8" stroke-linecap="round" />
+
+  <!-- Olive Leaves (Earthy Olive Green with dark ink contours) -->
+  <!-- Leaf 1 -->
+  <path d="M 400,160 C 450,130 500,150 510,180 C 490,210 430,200 400,160 Z" fill="#617050" fill-opacity="0.85" stroke="#162233" stroke-width="1.5" />
+  <path d="M 400,160 Q 460,170 510,180" fill="none" stroke="#162233" stroke-width="1" />
+
+  <!-- Leaf 2 -->
+  <path d="M 410,240 C 480,220 540,250 560,280 C 530,310 460,290 410,240 Z" fill="#525f44" fill-opacity="0.9" stroke="#162233" stroke-width="1.8" />
+  <path d="M 410,240 Q 490,260 560,280" fill="none" stroke="#162233" stroke-width="1.2" />
+
+  <!-- Leaf 3 -->
+  <path d="M 370,330 C 310,310 270,340 240,370 C 270,400 340,380 370,330 Z" fill="#718260" fill-opacity="0.85" stroke="#162233" stroke-width="1.5" />
+  <!-- Leaf 4 -->
+  <path d="M 450,380 C 520,360 580,390 610,430 C 570,460 500,440 450,380 Z" fill="#617050" fill-opacity="0.88" stroke="#162233" stroke-width="1.5" />
+  <!-- Leaf 5 -->
+  <path d="M 370,460 C 310,480 270,520 250,560 C 290,570 340,540 370,460 Z" fill="#525f44" fill-opacity="0.85" stroke="#162233" stroke-width="1.5" />
+  <!-- Leaf 6 -->
+  <path d="M 480,520 C 550,500 620,530 650,570 C 610,600 540,580 480,520 Z" fill="#6b7a5a" fill-opacity="0.8" stroke="#162233" stroke-width="1.5" />
+  <!-- Leaf 7 (left) -->
+  <path d="M 220,630 C 160,610 120,640 100,680 C 140,700 200,670 220,630 Z" fill="#718260" fill-opacity="0.85" stroke="#162233" stroke-width="1.5" />
+  <!-- Leaf 8 (lower right) -->
+  <path d="M 330,600 C 400,620 440,670 450,710 C 410,720 360,680 330,600 Z" fill="#525f44" fill-opacity="0.85" stroke="#162233" stroke-width="1.5" />
+
+  <!-- Olives (Deep Dark Blue with subtle lilac sheen) -->
+  <ellipse cx="440" cy="300" rx="16" ry="22" transform="rotate(25 440 300)" fill="#1c2838" stroke="#162233" stroke-width="1.5" />
+  <ellipse cx="436" cy="295" rx="5" ry="9" transform="rotate(25 436 295)" fill="#bba9cb" fill-opacity="0.6" />
+
+  <ellipse cx="510" cy="460" rx="17" ry="24" transform="rotate(-15 510 460)" fill="#16202e" stroke="#162233" stroke-width="1.5" />
+  <ellipse cx="506" cy="454" rx="5" ry="10" transform="rotate(-15 506 454)" fill="#bba9cb" fill-opacity="0.5" />
+
+  <ellipse cx="260" cy="530" rx="15" ry="20" transform="rotate(40 260 530)" fill="#1a2536" stroke="#162233" stroke-width="1.5" />
+  <ellipse cx="257" cy="526" rx="4" ry="8" transform="rotate(40 257 526)" fill="#c9bdd6" fill-opacity="0.6" />
+
+  <!-- Delicate Ink Stippling and Watermarks -->
+  <circle cx="340" cy="410" r="1.5" fill="#162233" opacity="0.6" />
+  <circle cx="344" cy="416" r="1.2" fill="#162233" opacity="0.4" />
+  <circle cx="338" cy="424" r="1" fill="#162233" opacity="0.5" />
+  <circle cx="470" cy="340" r="1.5" fill="#162233" opacity="0.6" />
+  <circle cx="475" cy="348" r="1.2" fill="#162233" opacity="0.4" />
+
+  <!-- Artist annotation in delicate script -->
+  <text x="140" y="860" font-family="'Caveat', 'Playfair Display', Georgia, serif" font-size="20" fill="#525f44" font-style="italic">
+    Fig. 04 — Olea europaea, harvested at dawn
+  </text>
+  <text x="140" y="890" font-family="Georgia, serif" font-size="13" fill="#162233" letter-spacing="2" opacity="0.65">
+    PIGMENT INK &amp; LILAC WASH ON COLD-PRESSED ARCHES 300GSM
+  </text>
+  <text x="650" y="890" font-family="Georgia, serif" font-size="14" fill="#162233" opacity="0.7" text-anchor="end">
+    2026 / REMI
+  </text>
+</svg>

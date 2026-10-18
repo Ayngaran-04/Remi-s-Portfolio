@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="twilightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b283d" />
+      <stop offset="45%" stop-color="#344865" />
+      <stop offset="70%" stop-color="#9d8baa" />
+      <stop offset="88%" stop-color="#cbbcd7" />
+      <stop offset="100%" stop-color="#dfd6e4" />
+    </linearGradient>
+    <linearGradient id="mistGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ded4e8" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#ded4e8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#ded4e8" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="750" fill="#f5efe6" />
+
+  <!-- Framed landscape canvas -->
+  <g transform="translate(60, 50)">
+    <rect width="880" height="580" fill="url(#twilightSky)" rx="2" />
+
+    <!-- Crescent Moon in dusk lilac sky -->
+    <circle cx="700" cy="110" r="28" fill="#ebe4f0" />
+    <circle cx="708" cy="106" r="26" fill="#344865" />
+
+    <!-- Far mountain range (dark blue-lilac haze) -->
+    <path d="M 0,340 Q 180,260 360,300 T 720,270 Q 820,290 880,310 L 880,580 L 0,580 Z" 
+          fill="#3b485c" fill-opacity="0.85" />
+
+    <!-- Midground rolling ridge (muted olive with blue undertones) -->
+    <path d="M 0,390 Q 220,330 450,380 T 880,350 L 880,580 L 0,580 Z" 
+          fill="#47543d" fill-opacity="0.9" />
+
+    <!-- Olive trees on ridge silhouettes -->
+    <!-- Tree cluster 1 -->
+    <ellipse cx="220" cy="360" rx="22" ry="16" fill="#2c3625" />
+    <line x1="220" y1="365" x2="220" y2="385" stroke="#162233" stroke-width="2.5" />
+    <ellipse cx="250" cy="355" rx="18" ry="14" fill="#36422f" />
+    <line x1="250" y1="360" x2="250" y2="380" stroke="#162233" stroke-width="2" />
+
+    <!-- Tree cluster 2 -->
+    <ellipse cx="640" cy="365" rx="26" ry="18" fill="#2e3a27" />
+    <line x1="640" y1="375" x2="640" y2="395" stroke="#162233" stroke-width="3" />
+    <ellipse cx="675" cy="370" rx="20" ry="15" fill="#3d4c35" />
+
+    <!-- Valley mist layer (soft lilac haze) -->
+    <path d="M 0,420 Q 300,400 600,425 T 880,410 L 880,450 Q 500,470 0,440 Z" fill="url(#mistGrad)" />
+
+    <!-- Foreground terrace & dark olive trees (crisp dark blue / deep olive) -->
+    <path d="M 0,460 Q 240,430 520,470 T 880,450 L 880,580 L 0,580 Z" fill="#2b3624" />
+
+    <!-- Expressive foreground olive tree -->
+    <path d="M 140,580 C 135,530 145,490 120,440 C 110,420 80,400 60,370" 
+          fill="none" stroke="#141c27" stroke-width="5" stroke-linecap="round" />
+    <path d="M 125,480 C 150,450 190,430 210,390" 
+          fill="none" stroke="#141c27" stroke-width="3.5" stroke-linecap="round" />
+    <!-- Leaf foliage canopy -->
+    <ellipse cx="80" cy="370" rx="45" ry="32" fill="#4d5c41" stroke="#141c27" stroke-width="1.5" />
+    <ellipse cx="140" cy="350" rx="55" ry="38" fill="#5c6e4e" stroke="#141c27" stroke-width="1.5" />
+    <ellipse cx="200" cy="380" rx="40" ry="28" fill="#46543b" stroke="#141c27" stroke-width="1.5" />
+    <ellipse cx="110" cy="330" rx="35" ry="24" fill="#697d5a" opacity="0.9" />
+
+    <!-- Field path winding down the hill -->
+    <path d="M 400,580 Q 420,530 380,500 Q 360,470 410,460" 
+          fill="none" stroke="#cfc3da" stroke-width="3" stroke-linecap="round" opacity="0.65" />
+  </g>
+
+  <!-- Editorial typography caption -->
+  <text x="80" y="675" font-family="'Caveat', Georgia, serif" font-size="22" fill="#47543d" font-style="italic">
+    "Valley of the Quiet Bells (Twilight Study)"
+  </text>
+  <text x="80" y="700" font-family="Georgia, serif" font-size="12" fill="#1b283d" letter-spacing="2" opacity="0.65">
+    CASEIN &amp; GRAPHITE ON BOARD • PLEIN AIR SERIES
+  </text>
+  <text x="920" y="700" font-family="Georgia, serif" font-size="13" fill="#1b283d" opacity="0.7" text-anchor="end">
+    NO. 12 • OCTOBER
+  </text>
+</svg>

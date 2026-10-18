@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="300" cy="300" r="280" />
+    </clipPath>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5efe6" />
+      <stop offset="100%" stop-color="#e9e0d2" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="300" cy="300" r="280" fill="url(#avatarBg)" stroke="#dcd3c3" stroke-width="2" />
+
+  <g clip-path="url(#circleClip)">
+    <!-- Lilac wash behind head -->
+    <circle cx="320" cy="240" r="140" fill="#cbbcd8" opacity="0.4" />
+    <!-- Olive shadow -->
+    <path d="M 120,400 Q 280,320 450,420 L 520,600 L 80,600 Z" fill="#586749" opacity="0.18" />
+
+    <!-- Artist silhouette & contour lines -->
+    <!-- Easel edge behind -->
+    <line x1="160" y1="80" x2="200" y2="580" stroke="#162233" stroke-width="3.5" opacity="0.3" />
+    <line x1="130" y1="260" x2="270" y2="240" stroke="#162233" stroke-width="3" opacity="0.3" />
+
+    <!-- Hair / Head -->
+    <path d="M 280,180 C 230,190 200,240 210,310 C 220,380 270,390 320,380 C 370,370 380,300 365,240 C 355,190 310,170 280,180 Z" fill="#1b283b" />
+    <!-- Bun or loose curls -->
+    <circle cx="230" cy="220" r="45" fill="#1b283b" />
+    <!-- Strands of hair in lilac and dark blue -->
+    <path d="M 210,240 C 180,260 190,320 220,350" fill="none" stroke="#9f8cb1" stroke-width="2.5" />
+    <path d="M 260,190 C 290,170 330,190 350,220" fill="none" stroke="#25354b" stroke-width="2" />
+
+    <!-- Neck & Face contour -->
+    <path d="M 330,270 C 345,290 340,320 325,335 C 310,350 295,360 295,385" fill="none" stroke="#162233" stroke-width="2.5" />
+
+    <!-- Shoulders & studio linen smock -->
+    <path d="M 240,410 C 180,450 150,520 140,600 L 460,600 C 450,520 420,450 360,410 Z" fill="#f7f3ec" stroke="#162233" stroke-width="2.5" />
+    <!-- Smock neckline & dark blue ribbon -->
+    <path d="M 270,415 C 290,440 310,440 330,415" fill="none" stroke="#162233" stroke-width="2" />
+    <path d="M 300,435 L 295,490" stroke="#162233" stroke-width="2" />
+    <path d="M 300,435 L 310,485" stroke="#162233" stroke-width="2" />
+
+    <!-- Olive green studio apron strap -->
+    <path d="M 220,440 L 260,600" stroke="#505e44" stroke-width="12" stroke-linecap="round" />
+    <path d="M 380,440 L 340,600" stroke="#505e44" stroke-width="12" stroke-linecap="round" />
+
+    <!-- Hand holding paintbrush -->
+    <g transform="translate(350, 420)">
+      <path d="M 0,90 Q 20,40 50,30 Q 80,40 70,80" fill="#fdfbf8" stroke="#162233" stroke-width="2" />
+      <!-- Brush handle -->
+      <line x1="30" y1="140" x2="90" y2="-40" stroke="#2b3b50" stroke-width="4.5" stroke-linecap="round" />
+      <rect x="78" y="-15" width="8" height="15" fill="#c5b78b" stroke="#162233" stroke-width="1" />
+      <!-- Brush tip with dark blue pigment -->
+      <path d="M 85,-15 C 88,-35 98,-40 92,-15 Z" fill="#162233" />
+    </g>
+  </g>
+
+  <!-- Framing circle outline -->
+  <circle cx="300" cy="300" r="280" fill="none" stroke="#1b283b" stroke-width="2" opacity="0.4" />
+  <circle cx="300" cy="300" r="288" fill="none" stroke="#505e44" stroke-width="1" stroke-dasharray="3,6" opacity="0.6" />
+</svg>

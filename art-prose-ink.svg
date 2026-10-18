@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="warmPage" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbf7" />
+      <stop offset="100%" stop-color="#f2ebe0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="#f3eee5" />
+
+  <!-- The Open Letter / Folio Sheet -->
+  <g transform="translate(100, 90)">
+    <!-- Folio shadow -->
+    <rect x="8" y="12" width="600" height="740" rx="3" fill="#0f1722" opacity="0.08" />
+    <!-- Folio paper -->
+    <rect width="600" height="740" rx="3" fill="url(#warmPage)" stroke="#dcd3c3" stroke-width="1.5" />
+
+    <!-- Delicate Lilac watercolor stain on the corner of the paper -->
+    <path d="M 0,0 L 220,0 C 180,60 190,140 130,170 C 80,190 20,130 0,110 Z" fill="#bfaed1" opacity="0.28" />
+    <!-- Olive green wash mark -->
+    <path d="M 400,600 C 470,580 540,620 600,600 L 600,740 L 480,740 C 430,700 420,640 400,600 Z" fill="#586749" opacity="0.15" />
+
+    <!-- Ruled margin line in faint olive -->
+    <line x1="90" y1="60" x2="90" y2="680" stroke="#586749" stroke-width="1" opacity="0.3" stroke-dasharray="2,4" />
+
+    <!-- Handwritten lines of prose / poetry in dark blue ink -->
+    <text x="130" y="140" font-family="'Caveat', Georgia, serif" font-size="28" fill="#1b2a3d">
+      A note on the blue hour:
+    </text>
+
+    <!-- Flowing script fragments -->
+    <path d="M 130,190 Q 250,185 360,192 T 520,188" fill="none" stroke="#162233" stroke-width="2" opacity="0.85" />
+    <path d="M 130,225 Q 220,220 380,228 T 490,224" fill="none" stroke="#162233" stroke-width="2" opacity="0.8" />
+    <path d="M 130,260 Q 280,255 420,262 T 530,258" fill="none" stroke="#162233" stroke-width="2" opacity="0.75" />
+    
+    <text x="130" y="320" font-family="'Caveat', Georgia, serif" font-size="22" fill="#505e43" font-style="italic">
+      "The ink takes three minutes to dry,
+    </text>
+    <text x="130" y="355" font-family="'Caveat', Georgia, serif" font-size="22" fill="#505e43" font-style="italic">
+      long enough to forget what was meant
+    </text>
+    <text x="130" y="390" font-family="'Caveat', Georgia, serif" font-size="22" fill="#505e43" font-style="italic">
+      and remember what was true."
+    </text>
+
+    <path d="M 130,440 Q 260,436 400,442 T 510,438" fill="none" stroke="#162233" stroke-width="2" opacity="0.75" />
+    <path d="M 130,475 Q 230,470 350,478 T 460,474" fill="none" stroke="#162233" stroke-width="2" opacity="0.7" />
+
+    <!-- Pressed wildflower (Lilac / Violet petals & olive stem) on the paper -->
+    <g transform="translate(420, 290) rotate(18)">
+      <path d="M 0,160 Q -10,80 15,0" fill="none" stroke="#526046" stroke-width="2" />
+      <path d="M 5,60 Q -25,45 -35,55 Q -15,70 5,60" fill="#6d7f5c" stroke="#1b2a3d" stroke-width="1" />
+      <!-- Petals -->
+      <path d="M 15,0 C -5,-25 -20,-10 0,5 Z" fill="#9e8bb0" stroke="#1b2a3d" stroke-width="1" opacity="0.9" />
+      <path d="M 15,0 C 25,-30 40,-15 15,-5 Z" fill="#88739b" stroke="#1b2a3d" stroke-width="1" opacity="0.9" />
+      <path d="M 15,0 C 35,5 35,25 15,10 Z" fill="#b09fc2" stroke="#1b2a3d" stroke-width="1" opacity="0.9" />
+      <path d="M 15,0 C -5,25 -25,20 0,5 Z" fill="#c4b5d5" stroke="#1b2a3d" stroke-width="1" opacity="0.9" />
+      <!-- Center pistil -->
+      <circle cx="15" cy="0" r="3" fill="#e8d584" />
+      <!-- Tape holding flower (Matte parchment tape) -->
+      <rect x="-15" y="80" width="55" height="18" fill="#e8e2d4" fill-opacity="0.85" rx="1" transform="rotate(-5)" stroke="#cfc5b3" stroke-width="1" />
+    </g>
+
+    <!-- Vintage brass dip pen resting across paper -->
+    <g transform="translate(180, 520) rotate(-28)">
+      <!-- Pen body (dark blue lacquer) -->
+      <rect x="0" y="0" width="340" height="12" rx="6" fill="#152132" stroke="#0a121c" stroke-width="1" />
+      <!-- Gold/Brass ferrule -->
+      <rect x="290" y="-1" width="35" height="14" fill="#cbb77d" stroke="#877443" stroke-width="1" />
+      <!-- Steel nib -->
+      <path d="M 325,0 L 365,6 L 325,12 Z" fill="#3a4b64" stroke="#152132" stroke-width="1" />
+      <line x1="335" y1="6" x2="360" y2="6" stroke="#0a121c" stroke-width="1" />
+      <circle cx="338" cy="6" r="1.5" fill="#0a121c" />
+      <!-- Nib highlight -->
+      <line x1="326" y1="3" x2="355" y2="6" stroke="#ffffff" stroke-width="0.8" opacity="0.6" />
+    </g>
+
+    <!-- Dark Blue ink drops & splatters -->
+    <circle cx="495" cy="485" r="4.5" fill="#162233" />
+    <circle cx="503" cy="491" r="2.2" fill="#162233" />
+    <circle cx="488" cy="494" r="1.5" fill="#162233" />
+    <circle cx="512" cy="482" r="1" fill="#162233" />
+  </g>
+
+  <!-- Framing caption -->
+  <text x="120" y="890" font-family="'Caveat', Georgia, serif" font-size="22" fill="#586749" font-style="italic">
+    "The Practice of Writing in the Margin"
+  </text>
+  <text x="120" y="915" font-family="Georgia, serif" font-size="12" fill="#1b2a3d" letter-spacing="2" opacity="0.65">
+    ESSAY STUDY NO. 09 • INK, PRESSED FLORA, ARCHIVAL VELLUM
+  </text>
+  <text x="680" y="915" font-family="Georgia, serif" font-size="13" fill="#1b2a3d" opacity="0.7" text-anchor="end">
+    WRITING FOLIO
+  </text>
+</svg>

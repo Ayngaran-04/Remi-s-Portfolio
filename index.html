@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="daylight">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remi Vance — Drawings, Writings & Studio Cabinet</title>
+  <meta name="description" content="The aesthetic portfolio of Remi Vance, artist & writer. Visual drawings, ink botanicals, essays, poetry, and curiosities.">
+  
+  <!-- Favicon in ink silhouette -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/art-botanical-olive.svg">
+
+  <!-- Core & Component Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Tactile paper grain filter overlay -->
+  <div class="paper-grain-overlay" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       Site Header
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrapper">
+        <a href="#hero" class="brand-title">Remi Vance</a>
+        <span class="brand-tagline">Artist, Writer &amp; Observer</span>
+      </div>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#drawings" class="nav-link">Drawings &amp; Ink</a>
+        <a href="#writings" class="nav-link">Writings</a>
+        <a href="#curiosities" class="nav-link">Curiosities</a>
+        <a href="#sketchbook" class="nav-link">Studio Desk</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#inquiries" class="nav-link">Inquiries</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Ambient Sound Generator Toggle -->
+        <button type="button" class="ambient-btn" id="ambient-sound-btn" title="Listen to studio rain on skylight">
+          <span class="sound-icon">🌧</span>
+          <span class="sound-text">Studio Rain: Off</span>
+        </button>
+
+        <!-- Day / Candlelight Theme Toggle -->
+        <button type="button" class="theme-btn" id="theme-toggle-btn" title="Toggle daylight paper / candlelight studio">
+          <span class="theme-icon">☀️</span>
+          <span class="theme-label">Daylight Paper</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-expanded="false">
+          ☰ Index
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section: Editorial Welcome
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="status-dot"></span>
+          <span>Currently: Preparing Autumn Monograph • Inquiries Open</span>
+        </div>
+
+        <h1 class="hero-headline">
+          Drawings, quiet prose, <em>ink on raw paper</em> &amp; <span class="hero-lilac-word">unhurried</span> things.
+        </h1>
+
+        <p class="hero-lead">
+          I am a multidisciplinary visual artist and essayist based between the olive terraces and my studio desk. I spend my days observing how dusk settles on stone, grinding walnut pigments, and writing about the small, tender details that modern rush tends to overlook.
+        </p>
+
+        <p class="hero-marginalia">
+          “To draw is to pay undivided attention to what the world has neglected.”
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#drawings" class="btn-primary">
+            Explore Portfolio &nbsp;↓
+          </a>
+          <a href="#writings" class="btn-secondary">
+            Read Recent Essays
+          </a>
+          <a href="#sketchbook" class="btn-secondary">
+            Leave a Desk Sketch
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual-card">
+        <div class="hero-portrait-frame">
+          <img src="assets/images/avatar-artist.svg" alt="Remi Vance working in her studio with apron and brush">
+        </div>
+        <div class="hero-stamp">
+          <span class="hero-stamp-text">STUDIO</span>
+          <span class="hero-stamp-year">2026</span>
+          <span class="hero-stamp-text">ARCHIVE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Folio I: Visual Artworks Gallery (Drawings, Botanical, Nocturne)
+       ========================================================================== -->
+  <section class="section" id="drawings">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">Folio I</span>
+        <h2 class="section-title">Drawings, Ink &amp; Nocturnes</h2>
+        <p class="section-subtitle">
+          Studies in raw vine charcoal, cold-pressed paper, olive washes, and twilight cobalt glass. Each piece is an exercise in restraint and tactile presence.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="gallery-filters" role="tablist">
+        <button type="button" class="filter-btn active" data-filter="all">All Folio Works</button>
+        <button type="button" class="filter-btn" data-filter="botanical">Botanical &amp; Flora</button>
+        <button type="button" class="filter-btn" data-filter="drawings">Drawings &amp; Ink</button>
+        <button type="button" class="filter-btn" data-filter="landscapes">Landscapes &amp; Air</button>
+        <button type="button" class="filter-btn" data-filter="still-life">Objects &amp; Vessels</button>
+        <button type="button" class="filter-btn" data-filter="sketchbook">Sketchbook Scraps</button>
+      </div>
+
+      <!-- Artworks Grid Container (Rendered dynamically from artworks-data.js) -->
+      <div class="artworks-grid" id="artworks-grid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Folio II: The Reading Room (Writings, Essays, Poems)
+       ========================================================================== -->
+  <section class="section" id="writings" style="background-color: var(--bg-paper-alt);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">Folio II</span>
+        <h2 class="section-title">Writings, Verse &amp; Studio Reflections</h2>
+        <p class="section-subtitle">
+          Essays on light, memory, and water; poetry cycles on olive roots; and unvarnished fragments from my studio desk journals.
+        </p>
+      </div>
+
+      <!-- Writings List Container (Rendered dynamically from writings-data.js) -->
+      <div class="writings-list" id="writings-list"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Folio III: Cabinet of Curiosities ("And Everything" Section)
+       ========================================================================== -->
+  <section class="section" id="curiosities">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">Folio III</span>
+        <h2 class="section-title">The Cabinet of Curiosities</h2>
+        <p class="section-subtitle">
+          An artist does not stop at the edge of the canvas. Here are the things that feed the work: pressed terrace specimens, slow-cooked ink recipes, books on the nightstand, and the studio's color swatches.
+        </p>
+      </div>
+
+      <!-- 1. Herbarium Specimens -->
+      <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem;">I. Terrace Herbarium</h3>
+      <div class="curiosities-subgrid" id="herbarium-grid"></div>
+
+      <!-- 2. Studio Ink Formulas -->
+      <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem;">II. Studio Ink &amp; Pigment Recipes</h3>
+      <div class="curiosities-subgrid" id="ink-grid"></div>
+
+      <!-- 3. Desk Bookshelf -->
+      <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem;">III. Books Kept Beside the Inkwell</h3>
+      <div class="curiosities-subgrid" id="books-grid"></div>
+
+      <!-- 4. Studio Color Swatches with Copyable Hex Codes -->
+      <div class="swatches-bar-wrapper">
+        <h3 class="swatches-heading">IV. The Studio Palette</h3>
+        <p class="swatches-subhead">
+          Restrained, natural pigments: dusty lilac, dried olive bark, midnight fountain ink, and warm bone linen. Click any swatch to copy its hex code.
+        </p>
+        <div class="swatches-grid" id="swatches-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Folio IV: Interactive Studio Desk & Visitor Sketchbook
+       ========================================================================== -->
+  <section class="section" id="sketchbook" style="background-color: var(--bg-paper-alt);">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-number">Folio IV</span>
+        <h2 class="section-title">The Studio Desk Sketchbook</h2>
+        <p class="section-subtitle">
+          Take a slow breath, pick up a tool, and draw directly on this cotton sheet. You can sketch with raw vine charcoal, dip pen ink, or soft olive and lilac watercolor washes. Download your sketch when finished.
+        </p>
+      </div>
+
+      <div class="sketchbook-wrapper">
+        <div class="sketchbook-header">
+          <div class="sketchbook-prompt-box">
+            <span class="sketchbook-prompt-label">Drawing Prompt</span>
+            <span class="sketchbook-prompt-text" id="sketch-prompt-text">“Draw an olive leaf from memory.”</span>
+            <button type="button" class="btn-new-prompt" id="sketch-new-prompt-btn">New prompt ↺</button>
+          </div>
+        </div>
+
+        <div class="sketchbook-toolbar">
+          <div class="sketch-tools-group">
+            <button type="button" class="sketch-tool-btn active" data-sketch-tool="charcoal">
+              <span class="tool-dot charcoal"></span> Vine Charcoal
+            </button>
+            <button type="button" class="sketch-tool-btn" data-sketch-tool="ink">
+              <span class="tool-dot ink"></span> Midnight Ink
+            </button>
+            <button type="button" class="sketch-tool-btn" data-sketch-tool="olive">
+              <span class="tool-dot olive"></span> Olive Wash
+            </button>
+            <button type="button" class="sketch-tool-btn" data-sketch-tool="lilac">
+              <span class="tool-dot lilac"></span> Lilac Glaze
+            </button>
+            <button type="button" class="sketch-tool-btn" data-sketch-tool="eraser">
+              <span class="tool-dot eraser"></span> Eraser
+            </button>
+          </div>
+
+          <div class="sketch-actions-group">
+            <button type="button" class="sketch-action-btn" id="sketch-clear-btn">Clean Page</button>
+            <button type="button" class="sketch-action-btn" id="sketch-save-btn">Save Sketch (PNG) ↓</button>
+          </div>
+        </div>
+
+        <div class="sketchbook-canvas-container">
+          <canvas id="sketchbook-canvas"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Folio V: About Remi Vance
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-portrait-wrapper">
+        <div class="about-image-card">
+          <img src="assets/images/art-sketchbook-spread.svg" alt="Open sketchbook showing hand drawings and pressed leaves">
+          <p class="about-caption">“A page from Folio VII: Hands in motion &amp; autumn swallows.”</p>
+        </div>
+      </div>
+
+      <div class="about-prose">
+        <span class="section-number">Folio V</span>
+        <h2 class="section-title">About Remi Vance</h2>
+        <p>
+          I am a visual artist and writer who works slowly. After completing studies in traditional fine arts and comparative literature, I realized that my favorite work happened not in high-gloss white-cube galleries, but at a wooden table covered in tea rings, pressed leaves, and open notebooks.
+        </p>
+        <p>
+          My work is an investigation into stillness. I draw with materials that have their own memory: hand-mulled inks from walnut husks, charcoal burnt from willow stems, and cold-pressed rag papers that absorb water like dry soil. In my writing, I look for the same quiet honesty — capturing the weight of an hour, the blue of twilight, or the dignity of leaving a sketch intentionally unfinished.
+        </p>
+
+        <div class="studio-materials-box">
+          <h4 class="materials-title">Materials Kept in Daily Use</h4>
+          <ul class="materials-list">
+            <li>Arches 300gsm cold-pressed cotton paper</li>
+            <li>Raw vine &amp; willow drawing charcoal</li>
+            <li>Vintage dip pens with flexible steel nibs</li>
+            <li>Boiled walnut husk &amp; iron gall ink</li>
+            <li>Elderberry &amp; lavender fugitive watercolor wash</li>
+            <li>Olivetti Lettera 32 mechanical typewriter</li>
+          </ul>
+        </div>
+
+        <p style="font-family: var(--font-hand); font-size: 1.4rem; color: var(--olive-primary);">
+          “When you make something with patience, it carries that patience into the room where it lives.”
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Folio VI: Correspondence & Inquiries + Studio Guestbook
+       ========================================================================== -->
+  <section class="section" id="inquiries" style="background-color: var(--bg-paper-alt);">
+    <div class="container inquiry-guestbook-grid">
+      
+      <!-- Left Column: Commission / Inquiries Form -->
+      <div class="inquiry-column">
+        <div class="col-header">
+          <span class="section-number">Folio VI</span>
+          <h2 class="col-title">Studio Correspondence</h2>
+          <p class="col-subtitle">
+            For commissions, original piece acquisitions, book illustration projects, or quiet collaborations.
+          </p>
+        </div>
+
+        <form class="inquiry-form" id="inquiry-form">
+          <div class="form-group">
+            <label for="inquiry-name" class="form-label">Your Name</label>
+            <input type="text" id="inquiry-name" class="form-input" placeholder="e.g. Eleanor Vance" required>
+          </div>
+
+          <div class="form-group">
+            <label for="inquiry-email" class="form-label">Email Address</label>
+            <input type="email" id="inquiry-email" class="form-input" placeholder="e.g. eleanor@quietmail.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="inquiry-interest" class="form-label">Nature of Inquiry</label>
+            <input type="text" id="inquiry-interest" class="form-input" placeholder="Original drawing, custom illustrated essay, reading, etc.">
+          </div>
+
+          <div class="form-group">
+            <label for="inquiry-message" class="form-label">Your Letter / Thoughts</label>
+            <textarea id="inquiry-message" class="form-textarea" placeholder="Tell me what you are imagining, or mention a color, mood, or poem that has stayed with you lately..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="margin-top: 0.5rem;">
+            Send Studio Letter &nbsp;✉
+          </button>
+        </form>
+      </div>
+
+      <!-- Right Column: Studio Guestbook / Community Pinboard -->
+      <div class="guestbook-column">
+        <div class="col-header">
+          <span class="section-number">Community Board</span>
+          <h2 class="col-title">Leave a Note on the Studio Wall</h2>
+          <p class="col-subtitle">
+            Visitors, readers, and kindred spirits are invited to pin a few words here.
+          </p>
+        </div>
+
+        <form class="guestbook-form" id="guestbook-form">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label for="guest-name" class="form-label">Name</label>
+              <input type="text" id="guest-name" class="form-input" placeholder="Your name or initials" required>
+            </div>
+            <div class="form-group">
+              <label for="guest-city" class="form-label">City / Place</label>
+              <input type="text" id="guest-city" class="form-input" placeholder="Where you are writing from">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="guest-note" class="form-label">A thought, memory, or greeting</label>
+            <textarea id="guest-note" class="form-textarea" style="min-height: 80px;" placeholder="Leave a short sentence or observation..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-secondary">
+            Pin Note to Board ✦
+          </button>
+        </form>
+
+        <div class="guestbook-entries" id="guestbook-entries">
+          <!-- Populated from localStorage in main.js -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Site Footer & Colophon
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Studio Remi Vance</h4>
+          <p>
+            An archive of drawings, essays, pressed botanicals, and quiet inquiries. Built with hand-tuned typography, honest parchment colors, and no automated shortcuts.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="#drawings">Drawings &amp; Nocturnes</a></li>
+            <li><a href="#writings">Essays &amp; Poetry</a></li>
+            <li><a href="#curiosities">Cabinet of Curiosities</a></li>
+            <li><a href="#sketchbook">Visitor Desk Sketchbook</a></li>
+            <li><a href="#about">About the Artist</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Studio Ethos</h5>
+          <p style="font-size: 0.9rem; color: var(--ink-muted); line-height: 1.7; margin-bottom: 1rem;">
+            “We don't look at art to escape reality; we look at art to return to reality with more gentle eyes.”
+          </p>
+          <p style="font-size: 0.82rem; color: var(--olive-primary); font-family: var(--font-hand); font-size: 1.25rem;">
+            remi@quietstudio.art
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Remi Vance. All rights reserved to the artist.</div>
+        <div>Typeset in Newsreader &amp; Plus Jakarta Sans • Handcrafted with care</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Artwork Lightbox Modal
+       ========================================================================== -->
+  <div class="artwork-modal" id="artwork-modal" role="dialog" aria-modal="true" aria-labelledby="modal-art-title">
+    <div class="artwork-modal-box">
+      <button type="button" class="modal-close-btn" id="artwork-modal-close" aria-label="Close modal">✕</button>
+      
+      <div class="modal-artwork-visual">
+        <img src="" alt="" id="modal-art-img">
+      </div>
+
+      <div class="modal-artwork-details">
+        <span class="modal-series-tag" id="modal-art-series">Series</span>
+        <h2 class="modal-art-title" id="modal-art-title">Title</h2>
+
+        <div class="modal-spec-list">
+          <div class="modal-spec-row">
+            <span class="modal-spec-label">Medium:</span>
+            <span class="modal-spec-val" id="modal-art-medium"></span>
+          </div>
+          <div class="modal-spec-row">
+            <span class="modal-spec-label">Dimensions:</span>
+            <span class="modal-spec-val" id="modal-art-dimensions"></span>
+          </div>
+          <div class="modal-spec-row">
+            <span class="modal-spec-label">Status:</span>
+            <span class="modal-spec-val" id="modal-art-status" style="color: var(--olive-primary); font-weight: 500;"></span>
+          </div>
+        </div>
+
+        <h4 class="modal-notes-heading">Artist's Studio Note</h4>
+        <p class="modal-art-notes" id="modal-art-notes"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Literary Reading Drawer (Slide-out reading view)
+       ========================================================================== -->
+  <div class="reading-drawer-overlay" id="reading-drawer-overlay"></div>
+  <aside class="reading-drawer" id="reading-drawer" aria-label="Reading Drawer">
+    <div class="drawer-top-bar">
+      <div class="drawer-font-controls">
+        <span style="font-size: 0.8rem; color: var(--ink-muted); margin-right: 0.25rem;">Type size:</span>
+        <button type="button" class="font-btn" id="font-dec-btn" title="Decrease font size">A−</button>
+        <button type="button" class="font-btn" id="font-inc-btn" title="Increase font size">A+</button>
+      </div>
+
+      <button type="button" class="drawer-close-btn" id="reading-drawer-close">
+        ✕ Close Reader
+      </button>
+    </div>
+
+    <article class="drawer-article-body">
+      <span class="drawer-genre-badge" id="drawer-genre">Genre</span>
+      <div class="drawer-meta-line" id="drawer-meta">Date • Read Time</div>
+      
+      <h1 class="drawer-main-title" id="drawer-title">Title</h1>
+      <p class="drawer-subtitle-line" id="drawer-subtitle">Subtitle</p>
+
+      <div class="drawer-epigraph-box" id="drawer-epigraph"></div>
+
+      <div class="drawer-content-body" id="drawer-content-body">
+        <!-- Rendered from writings-data.js -->
+      </div>
+    </article>
+  </aside>
+
+  <!-- ==========================================================================
+       Scripts
+       ========================================================================== -->
+  <script src="js/artworks-data.js"></script>
+  <script src="js/writings-data.js"></script>
+  <script src="js/curiosities-data.js"></script>
+  <script src="js/sketchbook.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
